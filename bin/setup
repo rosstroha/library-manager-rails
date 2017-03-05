@@ -26,3 +26,5 @@ bin/rails db:setup
 
 # Clean log files and tmp directory
 bin/rails log:clear tmp:clear
+
+npm install
