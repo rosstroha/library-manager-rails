@@ -12,3 +12,4 @@ vendor/ruby
 ._*
 .env
 .pryrc
+/vendor/assets/node_modules/
