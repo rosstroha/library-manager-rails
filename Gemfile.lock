@@ -494,7 +494,6 @@ DEPENDENCIES
   seedbank
   shoulda-matchers
   simple_form
-  slim
   slim-rails
   slim_lint
   spring
