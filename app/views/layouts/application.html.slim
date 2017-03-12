@@ -17,9 +17,7 @@ html class="no-js" lang="en" data-ng-app="tlm"
     == analytics_init if GA.tracker
 
   body
-    = render "navigation"
-    = render "messages"
-
+    data-ui-view
     main.container
       = yield
 

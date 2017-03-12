@@ -15,7 +15,12 @@
 #= require ng-file-upload
 #= require foundation
 #= require current_user
+
 #= require traktor-library-manager
+#= require routes
+#= require_tree ./services
+#= require_tree ./controllers
+
 
 # µ can be typed on a Mac with option-m
 window.µ = (key) -> ((object) -> object[key])
