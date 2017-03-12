@@ -6,15 +6,16 @@
 #
 #= require jquery2
 #= require jquery-ujs
-#= require foundation
-#= require current_user
-#= require_tree ../templates
-#= require_tree .
-
 #= require angular/angular
 #= require angular-ui-router
+#= require angular-material
+#= require angular-animate
+#= require angular-aria
 #= require underscore
 #= require ng-file-upload
+#= require foundation
+#= require current_user
+#= require traktor-library-manager
 
 # µ can be typed on a Mac with option-m
 window.µ = (key) -> ((object) -> object[key])
