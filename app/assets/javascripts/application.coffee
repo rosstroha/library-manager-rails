@@ -4,6 +4,9 @@
 # It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 # the compiled file.
 #
+#= require jquery2
+#= require jquery-ujs
+#= require foundation
 #= require current_user
 #= require_tree ../templates
 #= require_tree .
@@ -11,7 +14,6 @@
 #= require angular/angular
 #= require angular-ui-router
 #= require underscore
-#= require routes
 #= require ng-file-upload
 
 # µ can be typed on a Mac with option-m
@@ -39,3 +41,5 @@ if !String::splice
 
   String::splice = (start, delCount, newSubStr) ->
     @slice(0, start) + newSubStr + @slice(start + Math.abs(delCount))
+
+$(document).foundation()

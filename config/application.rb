@@ -8,6 +8,11 @@ Bundler.require(*Rails.groups)
 
 module RailsBase
   class Application < Rails::Application
+    bower_components_path = Rails.root.join('vendor', 'assets', 'bower_components')
+    config.assets.paths << bower_components_path
+    config.assets.precompile << /.*.(?:eot|svg|ttf|woff|woff2)$/
+    config.autoload_paths += [Rails.root.join('lib'), Rails.root.join('app', 'serializers')]
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -28,8 +33,5 @@ module RailsBase
 
     # Set URL options to be able to use url_for helpers
     config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
-
-    node_modules_path = Rails.root.join('vendor', 'assets', 'node_modules')
-    config.assets.paths << node_modules_path
   end
 end
